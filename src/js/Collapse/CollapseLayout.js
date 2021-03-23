@@ -1,6 +1,13 @@
 export default class Layout {
   constructor() {
     this.body = document.body;
+    this.lorem = `
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
+    `;
   }
 
   renderApp() {
@@ -23,8 +30,9 @@ export default class Layout {
   }
 
   renderTextArea() {
-    this.textArea = document.createElement('button');
+    this.textArea = document.createElement('div');
     this.textArea.className = 'container__textarea';
+    this.textArea.textContent = this.lorem;
     this.container.append(this.textArea);
   }
 }
