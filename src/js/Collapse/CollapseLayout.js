@@ -5,15 +5,12 @@ export default class Layout {
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nemo aliquam consequatur ea? Dolores assumenda architecto deserunt facere, magnam quod magni et omnis optio. Quis hic nostrum laboriosam eum magnam?
     `;
   }
 
   renderApp() {
     this.renderContainer();
     this.renderButton();
-    this.renderTextArea();
   }
 
   renderContainer() {

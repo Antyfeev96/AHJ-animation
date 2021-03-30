@@ -7,13 +7,28 @@ export default class CollapseController {
     this.layout.renderApp();
     this.container = document.querySelector('.container');
     this.button = this.container.querySelector('.container__button');
-    this.textArea = this.container.querySelector('.container__textarea');
-    this.buttonListener();
+    this.textArea = null;
+    this.buttonListeners();
   }
 
-  buttonListener() {
+  buttonListeners() {
     this.button.addEventListener('click', () => {
       this.button.classList.toggle('container__button_active');
+    });
+
+    this.button.addEventListener('click', () => {
+      switch (this.textArea) {
+        case null:
+          this.layout.renderTextArea();
+          this.textArea = this.container.querySelector('.container__textarea');
+          break;
+        default:
+          this.textArea.classList.add('inactive');
+          this.textArea.addEventListener('animationend', () => {
+            this.textArea.remove();
+            this.textArea = null;
+          });
+      }
     });
   }
 }
